@@ -32,7 +32,7 @@ class Personnage{
         this.argent = argent
     }
     prendre(objet){
-        this.sac.push(objet)
+        this.sac.push(objet[boite.indexOf(objet)])
         boite.splice(boite.indexOf(objet),1)
     }
     acheter(vendeur,objet){
